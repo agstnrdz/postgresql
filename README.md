@@ -11,6 +11,7 @@ GROUP BY nombre, salario, edad
 HAVING salario > 1500
 ORDER BY nombre
 
+INSERT INTO tabla VALUES ('','','','')
 ```
 
 #### Primary key
