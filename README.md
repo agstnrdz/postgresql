@@ -65,8 +65,8 @@ UNIQUE(salario)
 ```sql
 -- Agregar una llave foránea para relacionar tablas
 -- Ejemplo de dos tablas
-SELECT * from tabla Campo(nombre, nid, salario)
-SELECT * from empresas -- Campo(codigo)
+SELECT * from tabla --campos: (nombre, nid, salario)
+SELECT * from empresas -- campo: (codigo)
 
 -- Agregar un campo(int)
 ALTER TABLE tabla
