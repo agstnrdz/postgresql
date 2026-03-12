@@ -2,8 +2,21 @@
 ## Notas técnicas y teóricas
 ### Introducción
 
+#### 
 ```sql
 SELECT *
-FROM productores
-WHERE actividad = 'principal';
+FROM tabla
+WHERE nombre = 'Rodolfo';
+```
+
+#### Primary key
+```sql
+CREATE TABLE tabla(
+idpersona int not null,
+nombre varchar (20),
+primary key(idpersona)
+)
+
+ALTER TABLE tabla
+ADD PRIMARY KEY(idpersona)
 ```
