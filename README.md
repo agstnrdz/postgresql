@@ -14,9 +14,9 @@ WHERE nombre = 'Rodolfo';
 CREATE TABLE tabla(
 idpersona int not null,
 nombre varchar (20),
-primary key(idpersona)
+primary key (idpersona)
 )
 
 ALTER TABLE tabla
-ADD PRIMARY KEY(idpersona)
+add primary key (idpersona)
 ```
