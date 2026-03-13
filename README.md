@@ -12,13 +12,14 @@ HAVING salario > 1500
 ORDER BY nombre
 
 -- Insertar valores
-INSERT INTO tabla VALUES ('','','','')
+INSERT INTO tabla(campos)
+VALUES ('','','','')
 
--- Agregar una columna
+-- Agregar una columna nueva
 ALTER TABLE tabla
 ADD COLUMN columna varchar(20)
 
--- Agregar una columna
+-- Actualizar una columna
 UPDATE tabla
 SET pais = 'Argentina'
 WHERE id = 1;
