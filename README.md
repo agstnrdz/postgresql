@@ -11,7 +11,17 @@ GROUP BY nombre, salario, edad
 HAVING salario > 1500
 ORDER BY nombre
 
+-- Insertar valores
 INSERT INTO tabla VALUES ('','','','')
+
+-- Agregar una columna
+ALTER TABLE tabla
+ADD COLUMN columna varchar(20)
+
+-- Agregar una columna
+UPDATE tabla
+SET pais = 'Argentina'
+WHERE id = 1;
 ```
 
 #### Primary key
@@ -84,4 +94,18 @@ update tabla set codigoempresa = '2'
 
 -- Agregar un feature de ejemplo
 inser into tabla values ('Rodolfo','4','1500','5')
+```
+
+# Functions to manage strings
+```sql
+-- Consultar el largo del texto
+char_length
+
+-- Convertir caracteres en mayúscula
+upper(string)
+
+-- Convertir caracretes en minúscula
+lower(string)
+
+-- 
 ```
