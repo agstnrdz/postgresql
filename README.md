@@ -97,7 +97,7 @@ update tabla set codigoempresa = '2'
 inser into tabla values ('Rodolfo','4','1500','5')
 ```
 
-# Functions to manage strings
+#### Functions to manage strings
 ```sql
 -- Consultar el largo del texto
 char_length
@@ -107,6 +107,4 @@ upper(string)
 
 -- Convertir caracretes en minúscula
 lower(string)
-
--- 
 ```
