@@ -1,7 +1,7 @@
-# PostgreSQL
-## Notas técnicas y teóricas
+## PostgreSQL
+### Notas técnicas y teóricas
 
-#### General
+##### General
 ```sql
 SELECT *
 FROM tabla
@@ -25,7 +25,7 @@ SET pais = 'Argentina'
 WHERE id = 1;
 ```
 
-#### Primary key
+##### Primary key
 ```sql
 -- Define el campo id como primary key
 CREATE TABLE tabla(
@@ -37,7 +37,7 @@ primary key (idpersona)
 ALTER TABLE tabla
 add primary key (idpersona)
 ```
-#### Serial
+##### Serial
 ```sql
 -- Autoincrementar el campo definido como serial
 CREATE TABLE tabla(
@@ -47,7 +47,7 @@ contacto varchar(10)
 )
 ```
 
-#### Default values
+##### Default values
 ```sql
 -- Definir valor por defecto en campo
 CREATE TABLE tabla(
@@ -57,7 +57,7 @@ contacto varchar(20) default 'Desconocido'
 )
 ```
 
-#### Sum and count features
+##### Sum and count features
 ```sql
 SELECT SUM(*)
 SELECT COUNT(*)
@@ -65,7 +65,7 @@ FROM tabla
 WHERE nombre like '%a%'
 ```
 
-#### Unique
+##### Unique
 ```sql
 -- Restringir que un valor se repita en una columna
 ALTER TABLE tabla
@@ -73,7 +73,7 @@ ADD CONSTRAINT UQ_salario
 UNIQUE(salario)
 ```
 
-#### Foreign key
+##### Foreign key
 ```sql
 -- Agregar una llave foránea para relacionar tablas
 -- Ejemplo de dos tablas
@@ -97,7 +97,7 @@ update tabla set codigoempresa = '2'
 inser into tabla values ('Rodolfo','4','1500','5')
 ```
 
-#### Functions to manage strings
+##### Functions to manage strings
 ```sql
 -- Consultar el largo del texto
 char_length
